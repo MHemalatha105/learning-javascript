@@ -44,10 +44,29 @@ for(let i=1;i<5;i++)
 //     console.log(typeof a[i]);
 // }
 
-let a= ["Sairam",3,45,50];
- for(let i = 0;i<a.length;i++)
- {
-     console.log(typeof a[i]);
- }
+// let a= ["Sairam",3,45,50];
+//  for(let i = 0;i<a.length;i++)
+//  {
+//      console.log(typeof a[i]);
+//  }
+
+//====predefined methods
+let userData  = ["Apple",10,49.34,true,"Hello"];
+console.log(userData);
+
+userData.push(100);
+console.log(userData);
+
+userData.pop();
+console.log(userData);
+
+userData.shift();
+// console.log(userData);
+
+userData.unshift();
+console.log(userData);
+
+
+
 
 
