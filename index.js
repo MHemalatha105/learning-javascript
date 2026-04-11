@@ -44,3 +44,10 @@ for(let i=1;i<5;i++)
 //     console.log(typeof a[i]);
 // }
 
+let a= ["Sairam",3,45,50];
+ for(let i = 0;i<a.length;i++)
+ {
+     console.log(typeof a[i]);
+ }
+
+
