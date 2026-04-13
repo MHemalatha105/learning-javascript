@@ -72,6 +72,9 @@ const obj = {
 }
 console.log(obj.loc);
 
+obj.loc = "Hyd"
+console.log(obj);
+
 
 
 
