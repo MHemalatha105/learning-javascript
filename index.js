@@ -51,20 +51,26 @@ for(let i=1;i<5;i++)
 //  }
 
 //====predefined methods
-let userData  = ["Apple",10,49.34,true,"Hello"];
-console.log(userData);
-
-userData.push(100);
-console.log(userData);
-
-userData.pop();
-console.log(userData);
-
-userData.shift();
+// let userData  = ["Apple",10,49.34,true,"Hello"];
 // console.log(userData);
 
-userData.unshift();
-console.log(userData);
+// userData.push(100);
+// console.log(userData);
+
+// userData.pop();
+// console.log(userData);
+
+// userData.shift();
+// // console.log(userData);
+
+// userData.unshift();
+// console.log(userData);
+
+const obj = {
+    id:1,
+    name:"Guest"
+}
+console.log(obj.loc);
 
 
 
