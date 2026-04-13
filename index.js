@@ -75,7 +75,46 @@ console.log(obj.loc);
 obj.loc = "Hyd"
 console.log(obj);
 
+const users = [
+    {
+         id:1,
+         name:"user1",
+         loc:"Hyd"
+    },
+    {
+        id:2,
+        name:"user2",
+        loc:"Hyd"
+    },
+]
+console.log(users[0].name);
+
+//for of -arrays
+//for in - objects
 
 
+//Functions.....
+// function myFun(){
+//     console.log(-1);
+//     return -1
+// }
+// console.log(myFun);
+// console.log(myFun());
+
+// function add(a,b){
+//     return a+b;
+// }
+// console.log(add(4,6));
+
+// function add(a,b){
+//     return a-b;
+// }
+// console.log(add(4,2));
+
+const myFun = function(a,b){
+    return a+b
+}
+
+console.log(myFun(5,5));
 
 
