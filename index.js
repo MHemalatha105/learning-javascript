@@ -111,10 +111,22 @@ console.log(users[0].name);
 // }
 // console.log(add(4,2));
 
-const myFun = function(a,b){
-    return a+b
-}
+// const myFun = function(a,b){
+//     return a+b
+// }
 
-console.log(myFun(5,5));
+// console.log(myFun(5,5));
+
+function add(a,b,operation){
+    return a+b++;
+}
+console.log(add("The addition of"  + 4,6,));
+
+let name = "Hemaa";
+let age = "22";
+
+console.log("My.......name is " + name + ". she is "+ age);
+console.log(`My.....name is ${name}.she is ${age}`) ;
+
 
 
