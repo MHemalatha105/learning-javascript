@@ -117,16 +117,27 @@ console.log(users[0].name);
 
 // console.log(myFun(5,5));
 
-function add(a,b,operation){
-    return a+b++;
-}
-console.log(add("The addition of"  + 4,6,));
+// function add(a,b,operation){
+//     return a+b++;
+// }
+// console.log(add("The addition of"  + 4,6,));
 
-let name = "Hemaa";
-let age = "22";
+// let name = "Hemaa";
+// let age = "22";
 
-console.log("My.......name is " + name + ". she is "+ age);
-console.log(`My.....name is ${name}.she is ${age}`) ;
+// console.log("My.......name is " + name + ". she is "+ age);
+// console.log(`My.....name is ${name}.she is ${age}`) ;
 
+
+//DOCUMENT OBJECT MODEL////
+let e=document.getElementById("id1");
+console.log(e);
+console.log(e.innerText);
+console.log(e.innerHTML);
+e.innerText = "Helloooooo";   
+
+//when u want to add html tags inside then we have to use innerHtml like if we want to make text bold then we have
+//to write e.innerHTML="<b>Hellooo</b>"
+e.innerHTML="<i>Helloooooo</i>"
 
 
