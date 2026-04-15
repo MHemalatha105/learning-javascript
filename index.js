@@ -148,9 +148,16 @@ console.log(users[0].name);
 // box[0].innerHTML="Manvikk";
 //f[1].innerHTML = "Sairammm";     //index.js:149 Uncaught TypeError: Cannot set properties of undefined (setting 'innerHTML')
 
+// const myFun=() =>
+// {
+//     let d = document.getElementById("suchi");
+//     d.innerHTML=d.innerHTML=="Hellooooo"?"Byeeee":"Hellooooo";
+//     d.style.color=d.style.color=="blue"?"red":"blue";
+// };
+
 const myFun=() =>
 {
-    let d = document.getElementById("suchi");
-    d.innerHTML=d.innerHTML=="Hellooooo"?"Byeeee":"Hellooooo";
-    d.style.color=d.style.color=="blue"?"red":"blue";
-};
+    let d=document.getElementById("hema");
+    let l="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630";
+    d.src==l?d.src="https://img.freepik.com/free-photo/courage-man-jump-through-gap-hill-business-concept-idea_1323-262.jpg?semt=ais_hybrid&w=740&q=80":d.src=l;
+}
