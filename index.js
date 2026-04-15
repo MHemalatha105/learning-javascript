@@ -130,20 +130,25 @@ console.log(users[0].name);
 
 
 //DOCUMENT OBJECT MODEL////
-let e=document.getElementById("id1");
-console.log(e);
-console.log(e.innerText);
-console.log(e.innerHTML);
-e.innerText = "Helloooooo";   
+// let e=document.getElementById("id1");
+// console.log(e);
+// console.log(e.innerText);
+// console.log(e.innerHTML);
+// e.innerText = "Helloooooo";   
 
-//when u want to add html tags inside then we have to use innerHtml like if we want to make text bold then
-//we have to write e.innerHTML="<b>Hellooo</b>"
-//e.innerHTML="<i>Helloooooo</i>"
+// //when u want to add html tags inside then we have to use innerHtml like if we want to make text bold then
+// //we have to write e.innerHTML="<b>Hellooo</b>"
+// //e.innerHTML="<i>Helloooooo</i>"
 
-let f=document.getElementsByClassName("uni");
-console.log(f.innerText);
-console.log(f.innerHTML);
+// let f=document.getElementsByClassName("uni");
+// console.log(f.innerText);
+// console.log(f.innerHTML);
 
-let box = document.getElementsByClassName("unique");
-box[0].innerHTML="Manvikk";
+// let box = document.getElementsByClassName("unique");
+// box[0].innerHTML="Manvikk";
 //f[1].innerHTML = "Sairammm";     //index.js:149 Uncaught TypeError: Cannot set properties of undefined (setting 'innerHTML')
+
+constmyFun = ()=>{
+    let d =document.getElementById("suchi");
+    d.innerText="byeeeeeeeee";
+}
