@@ -148,7 +148,9 @@ console.log(users[0].name);
 // box[0].innerHTML="Manvikk";
 //f[1].innerHTML = "Sairammm";     //index.js:149 Uncaught TypeError: Cannot set properties of undefined (setting 'innerHTML')
 
-constmyFun = ()=>{
-    let d =document.getElementById("suchi");
-    d.innerText="byeeeeeeeee";
-}
+const myFun=() =>
+{
+    let d = document.getElementById("suchi");
+    d.innerHTML=d.innerHTML=="Hellooooo"?"Byeeee":"Hellooooo";
+    d.style.color=d.style.color=="blue"?"red":"blue";
+};
