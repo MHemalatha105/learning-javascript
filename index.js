@@ -162,15 +162,53 @@ console.log(users[0].name);
 //     d.src==l?d.src="https://img.freepik.com/free-photo/courage-man-jump-through-gap-hill-business-concept-idea_1323-262.jpg?semt=ais_hybrid&w=740&q=80":d.src=l;
 // }
 
-let isShow = true
-const myFun = () =>
-{
-    let d=document.getElementById("hema");
-    if(isShow)
-    {
-        d.src="https://img.freepik.com/free-photo/courage-man-jump-through-gap-hill-business-concept-idea_1323-262.jpg?semt=ais_hybrid&w=740&q=80";
-    }
-    else
-        d.src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630";
-    isShow=!isShow;
+// let isShow = true
+// const myFun = () =>
+// {
+//     let d=document.getElementById("hema");
+//     if(isShow)
+//     {
+//         d.src="https://img.freepik.com/free-photo/courage-man-jump-through-gap-hill-business-concept-idea_1323-262.jpg?semt=ais_hybrid&w=740&q=80";
+//     }
+//     else
+//         d.src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630";
+//     isShow=!isShow;
+// }
+
+const add = () => {
+    event.preventDefault()
+    let val1 = document.getElementById("value1").value
+    let val2 = document.getElementById("value2")
+    let display = document.getElementById("display")
+
+    display.innerHTML= `The sum of ${val1} and ${val2.value} is ${val1+val2.value}`;
 }
+
+const sub = () => {
+    event.preventDefault()
+    let val1 = document.getElementById("value1").value
+    let val2 = document.getElementById("value2")
+    let display = document.getElementById("display")
+
+    display.innerHTML=`The substraction of ${val1} and ${val2.value} is ${parseInt(val1)-parseInt(val2.value)}`;
+}
+
+const mul = () => {
+    event.preventDefault()
+    let val1 = document.getElementById("value1").value
+    let val2 = document.getElementById("value2")
+    let display = document.getElementById("display")
+
+    display.innerHTML=`The multiplication of ${val1} and ${val2.value} is ${val1*val2.value}`;
+}
+
+const div = () => {
+    event.preventDefault()
+    let val1 = document.getElementById("value1").value
+    let val2 = document.getElementById("value2")
+    let display = document.getElementById("display")
+
+    display.innerHTML=`The division of ${val1} and ${val2.value} is ${val1/val2.value}`;
+}
+
+
