@@ -175,40 +175,60 @@ console.log(users[0].name);
 //     isShow=!isShow;
 // }
 
-const add = () => {
-    event.preventDefault()
-    let val1 = document.getElementById("value1").value
-    let val2 = document.getElementById("value2")
-    let display = document.getElementById("display")
+// const add = () => {
+//     event.preventDefault()
+//     let val1 = document.getElementById("value1").value
+//     let val2 = document.getElementById("value2")
+//     let display = document.getElementById("display")
 
-    display.innerHTML= `The sum of ${val1} and ${val2.value} is ${val1+val2.value}`;
+//     display.innerHTML= `The sum of ${val1} and ${val2.value} is ${val1+val2.value}`;
+// }
+
+// const sub = () => {
+//     event.preventDefault()
+//     let val1 = document.getElementById("value1").value
+//     let val2 = document.getElementById("value2")
+//     let display = document.getElementById("display")
+
+//     display.innerHTML=`The substraction of ${val1} and ${val2.value} is ${parseInt(val1)-parseInt(val2.value)}`;
+// }
+
+// const mul = () => {
+//     event.preventDefault()
+//     let val1 = document.getElementById("value1").value
+//     let val2 = document.getElementById("value2")
+//     let display = document.getElementById("display")
+
+//     display.innerHTML=`The multiplication of ${val1} and ${val2.value} is ${val1*val2.value}`;
+// }
+
+// const div = () => {
+//     event.preventDefault()
+//     let val1 = document.getElementById("value1").value
+//     let val2 = document.getElementById("value2")
+//     let display = document.getElementById("display")
+
+//     display.innerHTML=`The division of ${val1} and ${val2.value} is ${val1/val2.value}`;
+// }
+
+let colorCodes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "a", "b", "c", "d", "e", "f"];
+
+
+const changeColor = () => {
+    
+    let box = document.getElementsByClassName("box")[0]
+    let randColor = "#"
+    
+    for (let index = 0; index < 6; index++) {
+        let randNo = Math.floor(Math.random() * 16)
+        randColor += colorCodes[randNo]
+    }
+    
+    box.style.backgroundColor = randColor
+    
 }
 
-const sub = () => {
-    event.preventDefault()
-    let val1 = document.getElementById("value1").value
-    let val2 = document.getElementById("value2")
-    let display = document.getElementById("display")
+changeColor()
 
-    display.innerHTML=`The substraction of ${val1} and ${val2.value} is ${parseInt(val1)-parseInt(val2.value)}`;
-}
-
-const mul = () => {
-    event.preventDefault()
-    let val1 = document.getElementById("value1").value
-    let val2 = document.getElementById("value2")
-    let display = document.getElementById("display")
-
-    display.innerHTML=`The multiplication of ${val1} and ${val2.value} is ${val1*val2.value}`;
-}
-
-const div = () => {
-    event.preventDefault()
-    let val1 = document.getElementById("value1").value
-    let val2 = document.getElementById("value2")
-    let display = document.getElementById("display")
-
-    display.innerHTML=`The division of ${val1} and ${val2.value} is ${val1/val2.value}`;
-}
 
 

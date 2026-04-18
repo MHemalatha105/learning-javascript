@@ -1,4 +1,18 @@
-#suchi
+/* #suchi
 {
     color: blue;
+} */
+
+
+h1 {
+    color: red;
+
+}
+
+.box {
+    border: 5px pink;
+
+    width: 200px;
+    height: 200px;
+
 }
