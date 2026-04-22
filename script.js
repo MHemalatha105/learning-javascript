@@ -27,3 +27,5 @@ const fetchAPI = async ()=>{
     image.src = imageURL
 }
 fetchAPI()
+
+//java script ended//
